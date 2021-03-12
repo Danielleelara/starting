@@ -3,24 +3,29 @@
 
 <script>
 
- var ano = 2016;
- 
- document.write("Flávio tem  " + (ano - 1977) + " anos" + "<br>" );
- document.write("Joaquim tem " + (ano - 1996) + " anos " + "<br>"+ "<br>");
+ function puloLinha() {
+
+     document.write("<br><br>");
+        
+}
+
+    function mostra(frase){
+
+        document.write(frase);
+        puloLinha();
+
+    }
+
+ var ano = 2016; 
+
+ mostra("Flávio tem  " + (ano - 1977) + " anos");
+
+ mostra("Joaquim tem " + (ano - 1996) + " anos");
 
  ano = 2017;
- document.write("Barney tem " + (ano - 1976) + " anos " + "<br>");
 
- var idadeFlavio = 39;
- var idadeJoaquim = 20;
- var idadeBarney = 41;
- var media = (idadeFlavio+idadeJoaquim+idadeBarney)/3;
- 
- document.write("A média das idades é " + Math.round(media)+"<br>");
+ mostra("Barney tem " + (ano - 1976) + " anos");
 
- var nome = "Flávio";
 
- document.write("A idade de " + nome + " é " + idadeFlavio);
- 
-
+  
 </script>
